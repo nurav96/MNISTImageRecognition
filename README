@@ -1,0 +1,9 @@
+Varun Iyengar
+
+Classifying MNIST images with above 99% accuracy.
+
+When deciding upon hyperparameters, I felt that the channel numbers and layer numbers provided by the MNISTCnv.py file were adequate, but perhaps required some regularization. 
+I tried multiple dropout rates in conjunction with l1/l2 kernel/activity regularization, and found that simply adding a dropout rate of 1.0 with no other regularization was the best optimization.
+
+In regards to the augmentation I chose, I found that some of the original data was skewed by a marginal amount, but found very little cases of rotation. 
+My tests verified this hypothesis, and I finalized upon height/width axis shifts and a rotation range of 1 degree.
